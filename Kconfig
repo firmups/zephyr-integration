@@ -1,0 +1,9 @@
+
+menu "FIRMUPS Agent Module"
+
+config FIRMUPS_AGENT_MODULE
+    bool "Enable FIRMUPS agent"
+    default y
+    help
+      Enable support for FIRMUPS Agent Module.
+

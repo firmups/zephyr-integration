@@ -1,0 +1,5 @@
+
+name: firmups_agent_module
+build:
+  cmake: .
+  kconfig: Kconfig
