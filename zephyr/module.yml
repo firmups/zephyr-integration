@@ -2,5 +2,3 @@ name: FIRMUPS
 build:
   cmake: .
   kconfig: Kconfig
-  depends:
-    - firmups-device-sdk

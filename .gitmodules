@@ -1,0 +1,3 @@
+[submodule "dependencies/device-sdk"]
+	path = dependencies/device-sdk
+	url = https://github.com/firmups/device-sdk

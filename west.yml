@@ -1,7 +1,0 @@
-manifest:
-  projects:
-    - name: firmups-device-sdk
-      path: ./modules/lib/firmups-device-sdk
-      url: https://github.com/firmups/device-sdk
-      revision: main
-      submodules: true

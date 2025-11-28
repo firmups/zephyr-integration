@@ -6,7 +6,7 @@ if(CONFIG_FIRMUPS_MODULE)
     message(STATUS "FIRMUPS enabled")
 
     # Add the Firmups Device SDK as a subdirectory
-    add_subdirectory(${ZEPHYR_BASE}/modules/lib/firmups-device-sdk)
+    add_subdirectory(dependencies/device-sdk)
 
     if(CONFIG_FIRMUPS_ENCRYPTION_CALLBACKS)
         target_compile_definitions(firmups-device-sdk PRIVATE FIRMUPS_USE_CRYPTO_CALLBACKS)
