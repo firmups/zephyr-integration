@@ -5,15 +5,8 @@ project(firmups)
 if(CONFIG_FIRMUPS_MODULE)
     message(STATUS "FIRMUPS enabled")
 
-    include(FetchContent)
-
-    # Pull device-sdk from GitHub
-    FetchContent_Declare(
-        firmups-device-sdk
-        GIT_REPOSITORY https://github.com/firmups/device-sdk.git
-        GIT_TAG main   # or a branch name like main
-    )
-    FetchContent_MakeAvailable(firmups-device-sdk)
+    # Add the Firmups Device SDK as a subdirectory
+    add_subdirectory(${ZEPHYR_BASE}/modules/lib/firmups-device-sdk)
 
     if(CONFIG_FIRMUPS_ENCRYPTION_CALLBACKS)
         target_compile_definitions(firmups-device-sdk PRIVATE FIRMUPS_USE_CRYPTO_CALLBACKS)
